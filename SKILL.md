@@ -70,18 +70,37 @@ Pipeline de développement multi-agent séquentiel avec modèles Ollama locaux.
 
 **AUTOMATIQUE** - Pas de phrases magiques.
 
-Le pipeline se déclenche automatiquement pour toute tâche de développement :
+Le pipeline se déclenche automatiquement pour **TOUTE** tâche impliquant du code :
 
 ```
 "Crée une API REST"
-"Ajoute l'authentification OAuth2"
-"Implémente un système de cache"
-"Fais un cron de nettoyage"
+"Ajoute un bouton"
+"Modifie le CSS"
+"Corrige un bug"
+"Refactor ce fichier"
+"Change la couleur du header"
 ```
 
+**Règle OBLIGATOIRE** : Si ça touche à du code, ça passe par le Pipeline.
+
+### ✅ Pipeline obligatoire
+- Créer/modifier/supprimer du code
+- Modifier un fichier source (.ts, .tsx, .js, .py, .swift, etc.)
+- Changer du CSS, HTML, config
+- Ajouter une feature, un composant, une fonction
+- Corriger un bug, refactor
+- Tests, documentation technique
+
+### ❌ Pas de Pipeline
+- Lire un fichier
+- Répondre au chat
+- Lancer une commande système
+- Rechercher sur le web
+- Gérer des rappels/notes
+
 **Détection automatique**:
-- Verbes: créer, ajouter, implémenter, développer, coder, builder
-- Sujets: API, feature, système, module, service, component
+- Verbes: créer, ajouter, implémenter, développer, coder, builder, modifier, changer, corriger, refactor, supprimer
+- Sujets: API, feature, système, module, service, component, fichier, code, fonction, bug, CSS, style
 - Pas besoin de dire "pipeline" ou "avec le pipeline"
 
 Le skill détecte que c'est du dev et lance automatiquement les 4 étapes.
